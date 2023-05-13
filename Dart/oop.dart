@@ -2,13 +2,12 @@ class Cliente{
 	String ragione_sociale = "";
 	double _fatturato = 0;
 	int ordini_settimanali = 0;
-	bool _malattie = true; //Variabile privata
+//Variabile privata
 
 	Cliente(String ragione_sociale, double fatturato, int ordini_settimanali, bool malattie){ 		//COSTRUTTORE
 		this.ragione_sociale = ragione_sociale;
 		this._fatturato = fatturato;
 		this.ordini_settimanali = ordini_settimanali;
-		this._malattie = malattie;
 		//ps un costruttore può richiamarne un altro!
 	}
 

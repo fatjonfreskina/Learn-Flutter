@@ -1,7 +1,6 @@
 main(List<String> args) {
   // TIPI SEMPLICI
 
-  int n; // inizializzata a null
   int n2 = 100;
 
   var s = 5.78;
@@ -15,8 +14,6 @@ main(List<String> args) {
   String str = "CIAO".toLowerCase();
   str += " mona".toUpperCase();
   print(str + "; Fine test tipi semplici");
-
-  bool risultato_test = false;
 
   // TIPI STRUTTURATI
 
@@ -47,10 +44,13 @@ main(List<String> args) {
   Set<String> colori = {"giallo", "rosso"};
   //non ordinati, non accetta doppioni
   //esistono sotto-tipi del set, CompactLinkedHashSet<String>
-
+  colori.forEach((element) {
+    print(element);
+  });
   //Tipo map, è il dizionario in python
 
   Map m = {"codice": "xyz", "descrizione": "climatizzatore ultra"};
   print(m["codice"]);
   m["costo"] = 1237;
+  print(m["costo"]);
 }

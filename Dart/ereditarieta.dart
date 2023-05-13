@@ -12,11 +12,18 @@ class Madre {
 }
 
 class Figlia extends Madre {
-  String variabile_figlia = "";
+  String _variabile_figlia = "Test";
   Figlia();
+
+  String getString(){
+    return _variabile_figlia;
+  }
+  void _PrintName(){
+      print("Hello");
+    }
 }
 
 main(List<String> args) {
   Figlia f1 = Figlia();
-  //Attenzione che Figlia f1 crea invece un oggetto VUOTO. In c++ invece no... Errore bastardo da tracciare
+  f1._PrintName();
 }
